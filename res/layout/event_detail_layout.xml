@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar" >
+
+            <TextView
+                android:id="@+id/evetn_details_layout_back_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/back_icon"
+                android:drawablePadding="@dimen/margin_5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_10"
+                android:src="@drawable/event_btn"
+                android:text="Events"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xhdpi_18" />
+            
+           <!--  <ImageView
+	            android:id="@+id/evetn_details_layout_addnew_textview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="@dimen/margin_xhdpi_14"
+	            android:background="@drawable/add_icon"
+	            android:contentDescription="@string/app_name" /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/gradient_bg_placeholder" >
+
+            <ImageView
+                android:id="@+id/evetn_details_layout_imageview_homeimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="true" 
+                android:scaleType="centerInside"               
+                android:paddingBottom="@dimen/padding_xhdpi_5"
+                android:layout_centerInParent="true"
+               
+                 />
+            
+            <TextView
+                android:id="@+id/evetn_details_layout_textview_eventname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="Dummy Event Name"
+                android:textColor="@color/white"
+                android:textSize="20sp" 
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_20"/>
+            
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="#FF6600"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/event_detail_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:gravity="center_vertical"
+                android:text="Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_xhdpi_22" />
+
+            <ImageView
+                android:id="@+id/evetn_details_layout_imageview_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/edit_icon_new" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/evetn_details_layout_imageview_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/photo_icon" />
+
+                    <ImageView
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/events_details_line" />
+
+                    <ImageView
+                        android:id="@+id/evetn_details_layout_imageview_video"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/video_icon" />
+
+                    <ImageView
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/events_details_line" />
+
+                    <ImageView
+                        android:id="@+id/evetn_details_layout_imageview_doc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/note_icon" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:src="@drawable/events_details_big_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_input"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <TextView
+                            android:id="@+id/detail_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="Details"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <TextView
+                            android:id="@+id/evetn_details_layout_textview_eventdetails"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="Dummay Event Name"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_input"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <TextView
+                            android:id="@+id/at_info_text_view"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="At"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <TextView
+                            android:id="@+id/evetn_details_layout_textview_place"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="Dummay Event Name"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/datelyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_input"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <TextView
+                            android:id="@+id/on_info_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="On"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <TextView
+                            android:id="@+id/evetn_details_layout_textview_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="Dummay Event Name"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/timelyt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_input"
+                        android:orientation="horizontal"
+                        android:weightSum="3" >
+
+                        <TextView
+                            android:id="@+id/from_info_text"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="From"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <TextView
+                            android:id="@+id/evetn_details_layout_textview_starttime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/margin_5"
+                            android:text="Dummay Event Name"
+                            android:textColor="@color/color_656565"
+                            android:textSize="@dimen/text_xhdpi_16" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

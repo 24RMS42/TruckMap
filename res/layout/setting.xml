@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/finishTrip_ui_backImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_9"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/finishtrip_ui_tv_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/finishtrip_ui_tv_notif"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xhdpi_22" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:src="@drawable/map_icon" />
+
+        <TextView
+            android:id="@+id/setting_chng_rds_txtvw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/arrow_icon"
+            android:gravity="center|left"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:text="@string/lbl_chng_rds"
+            android:textColor="@color/color_3f3f3f"
+            android:textSize="@dimen/text_xhdpi_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:id="@+id/setting_edit_prf_lnrlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:src="@drawable/edit_icon_new" />
+
+        <TextView
+            android:id="@+id/edit_profile_txtvw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/arrow_icon"
+            android:gravity="center|left"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:text="Edit Profile"
+            android:textColor="@color/color_3f3f3f"
+            android:textSize="@dimen/text_xhdpi_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:src="@drawable/logout" />
+
+        <TextView
+            android:id="@+id/setting_logout_txtvw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/arrow_icon"
+            android:gravity="center|left"
+            android:padding="@dimen/padding_xhdpi_9"
+            android:text="@string/lbl_logout"
+            android:textColor="@color/color_3f3f3f"
+            android:textSize="@dimen/text_xhdpi_16" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line" />
+
+</LinearLayout>

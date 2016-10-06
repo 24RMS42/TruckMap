@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#009ff6"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar" >
+
+            <ImageView
+                android:id="@+id/event_btn_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="@dimen/margin_10"
+                android:src="@drawable/event_btn" />
+
+            <ImageView
+                android:id="@+id/home_ui_logoutImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_xhdpi_14"
+                android:background="@drawable/setting"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/home_ui_tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/home_heading"
+                android:textColor="@color/white"
+                android:textSize="@dimen/margin_xhdpi_22" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="#000000" >
+
+                <fragment
+                    android:id="@+id/map_relative_fragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    class="com.google.android.gms.maps.SupportMapFragment" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/home_ui_addnewTripLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_new_trip_bg1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_xhdpi_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/add_new_trip_icon"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/home_ui_tv_Addnewtrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_5"
+                        android:text="@string/home_addnewtrip"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_xhdpi_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_ui_notification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_new_trip_bg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_xhdpi_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/notifications_icon"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/home_ui_tv_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_5"
+                        android:text="@string/home_notification"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_xhdpi_18" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/home_ui_currenttrips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_new_trip_bg2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_xhdpi_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/current_trips_icon"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/home_ui_tv_currenttrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_5"
+                        android:text="@string/home_currentTrips"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_xhdpi_18" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_ui_finishedtrips"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/add_new_trip_bg1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_xhdpi_5" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/finished_trips_icon"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/home_ui_tv_finishtrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_5"
+                        android:text="@string/home_finishedTrips"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_xhdpi_18" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_add_mobs" />
+
+</LinearLayout>

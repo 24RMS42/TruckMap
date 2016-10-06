@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/add_trip_box"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/addnewtrip_relative_ImageViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cross_icon" />
+
+        <TextView
+            android:id="@+id/addnewtrip_ui_tvLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text_xhdpi_25"
+            android:text="@string/addnewtrip_ui_tvLine1"
+            android:textColor="@color/color_3f3f3f"
+            android:textSize="@dimen/margin_xhdpi_22" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/margin_xhdpi_7"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/addnewtrip_ed_TripName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xhdpi_9"
+            android:background="@drawable/forgot_input"
+            android:gravity="center|left"
+            android:hint="@string/addnewtrip_ui_ed_TripName"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/padding_xhdpi_9"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/addnewtrip_ed_DestName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_xhdpi_9"
+            android:background="@drawable/forgot_input"
+            android:gravity="center|left"
+            android:hint="@string/addnewtrip_ui_ed_DesName"
+            android:inputType="textCapWords"
+            android:paddingLeft="@dimen/padding_xhdpi_9"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:id="@+id/form_dropdown_container_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addnewtrip_btnSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_xhdpi_9"
+            android:text="@string/addnewtrip_ui_btnEnter"
+            android:textColor="@color/color_3f3f3f"
+            android:textSize="@dimen/margin_xhdpi_18" />
+    </LinearLayout>
+
+</LinearLayout>

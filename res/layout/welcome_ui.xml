@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_34" >
+
+                    <ImageView
+                        android:id="@+id/welcome_logoImageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/logo" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xhdpi_20"
+                    android:background="@drawable/login_bg"
+                    android:contentDescription="@string/app_name"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_xhdpi_14"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/ed_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/login_input"
+                            android:drawablePadding="@dimen/padding_xhdpi_5"
+                            android:drawableRight="@drawable/mail_icon"
+                            android:gravity="center|left"
+                            android:hint="@string/ed_email"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/padding_xhdpi_14"
+                            android:paddingRight="@dimen/padding_xhdpi_9"
+                            android:singleLine="true"
+                            android:textColor="@color/color_3f3f3f"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <EditText
+                            android:id="@+id/ed_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_xhdpi_9"
+                            android:background="@drawable/login_input"
+                            android:drawablePadding="@dimen/padding_xhdpi_5"
+                            android:drawableRight="@drawable/password_icon"
+                            android:gravity="center|left"
+                            android:hint="@string/ed_password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/padding_xhdpi_14"
+                            android:paddingRight="@dimen/padding_xhdpi_12"
+                            android:singleLine="true"
+                            android:textColor="@color/color_3f3f3f"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <TextView
+                            android:id="@+id/tv_forgetPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_xhdpi_9"
+                            android:hint="@string/tv_forgetPassword"
+                            android:padding="@dimen/padding_xhdpi_5"
+                            android:paddingLeft="@dimen/padding_xhdpi_9"
+                            android:textColor="@color/color_3f3f3f"
+                            android:textSize="@dimen/text_xhdpi_16" />
+
+                        <Button
+                            android:id="@+id/btn_Login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_xhdpi_25"
+                            android:background="@drawable/sign_in_btn"
+                            android:text="@string/login_heading"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_xhdpi_20" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xhdpi_20"
+                    android:background="@drawable/or_line"
+                    android:contentDescription="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btn_SignUp_as_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xhdpi_9"
+                        android:layout_marginLeft="@dimen/margin_xhdpi_20"
+                        android:layout_marginRight="@dimen/margin_xhdpi_20"
+                        android:background="@drawable/sign_up_btn"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:drawableRight="@drawable/company_people_icon"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/margin_10"
+                        android:text="@string/signup_as_company"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_xhdpi_16" />
+
+                    <Button
+                        android:id="@+id/btn_SignUp_as_new_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_xhdpi_9"
+                        android:layout_marginLeft="@dimen/margin_xhdpi_20"
+                        android:layout_marginRight="@dimen/margin_xhdpi_20"
+                        android:background="@drawable/sign_up_btn"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:drawableRight="@drawable/new_user_icon"
+                        android:paddingRight="@dimen/margin_10"
+                        android:text="@string/btn_SignUp"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/text_xhdpi_16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

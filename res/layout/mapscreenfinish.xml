@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/mapscreenfinish_ui_backImgview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_14"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name" />
+        
+        <TextView
+            android:id="@+id/mapscreenfinish_ui_textview_reuse" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reuse Trip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xhdpi_16"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/padding_xhdpi_5"
+            android:background="@drawable/reuse_icon_btn"
+            android:gravity="center"
+            android:padding="@dimen/margin_10"/> 
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/map_relative_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+    </LinearLayout>
+    
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_add_mobs" />
+    
+
+</LinearLayout>

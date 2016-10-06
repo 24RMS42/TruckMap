@@ -1,0 +1,119 @@
+<!--
+ <resources>
+
+    Default screen margins, per the Android Design guidelines.
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    text size
+    <dimen name="text_xhdpi_5">3dp</dimen>
+    <dimen name="text_xhdpi_7">5dp</dimen>
+    <dimen name="text_xhdpi_9">6dp</dimen>
+    <dimen name="text_xhdpi_12">8dp</dimen>
+    <dimen name="text_xhdpi_14">9dp</dimen>
+    <dimen name="text_xhdpi_16">11dp</dimen>
+    <dimen name="text_xhdpi_18">12dp</dimen>
+    <dimen name="text_xhdpi_20">14dp</dimen>
+    <dimen name="text_xhdpi_22">15dp</dimen>
+    <dimen name="text_xhdpi_25">17dp</dimen>
+    <dimen name="text_xhdpi_27">18dp</dimen>
+    <dimen name="text_xhdpi_30">20dp</dimen>
+    <dimen name="text_xhdpi_32">21dp</dimen>
+    <dimen name="text_xhdpi_34">23dp</dimen>
+
+    margins
+    <dimen name="margin_xhdpi_5">3dp</dimen>
+    <dimen name="margin_xhdpi_7">5dp</dimen>
+    <dimen name="margin_xhdpi_9">6dp</dimen>
+    <dimen name="margin_xhdpi_12">8dp</dimen>
+    <dimen name="margin_xhdpi_14">9dp</dimen>
+    <dimen name="margin_xhdpi_16">11dp</dimen>
+    <dimen name="margin_xhdpi_18">12dp</dimen>
+    <dimen name="margin_xhdpi_20">14dp</dimen>
+    <dimen name="margin_xhdpi_22">15dp</dimen>
+    <dimen name="margin_xhdpi_25">17dp</dimen>
+    <dimen name="margin_xhdpi_27">18dp</dimen>
+    <dimen name="margin_xhdpi_30">20dp</dimen>
+    <dimen name="margin_xhdpi_32">21dp</dimen>
+    <dimen name="margin_xhdpi_34">23dp</dimen>
+
+    screen padding
+    <dimen name="padding_xhdpi_5">3dp</dimen>
+    <dimen name="padding_xhdpi_7">5dp</dimen>
+    <dimen name="padding_xhdpi_9">6dp</dimen>
+    <dimen name="padding_xhdpi_12">8dp</dimen>
+    <dimen name="padding_xhdpi_14">9dp</dimen>
+    <dimen name="padding_xhdpi_16">11dp</dimen>
+    <dimen name="padding_xhdpi_18">12dp</dimen>
+    <dimen name="padding_xhdpi_20">14dp</dimen>
+    <dimen name="padding_xhdpi_22">15dp</dimen>
+    <dimen name="padding_xhdpi_25">17dp</dimen>
+    <dimen name="padding_xhdpi_27">18dp</dimen>
+    <dimen name="padding_xhdpi_30">20dp</dimen>
+    <dimen name="padding_xhdpi_32">21dp</dimen>
+    <dimen name="padding_xhdpi_34">23dp</dimen>
+    <dimen name="padding_xhdpi_100">60dp</dimen>
+
+</resources>
+-->
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_xhdpi_5">5dp</dimen>
+    <dimen name="text_xhdpi_7">7dp</dimen>
+    <dimen name="text_xhdpi_9">9dp</dimen>
+    <dimen name="text_xhdpi_12">12dp</dimen>
+    <dimen name="text_xhdpi_14">14dp</dimen>
+    <dimen name="text_xhdpi_16">16dp</dimen>
+    <dimen name="text_xhdpi_18">18dp</dimen>
+    <dimen name="text_xhdpi_20">20dp</dimen>
+    <dimen name="text_xhdpi_22">22dp</dimen>
+    <dimen name="text_xhdpi_25">25dp</dimen>
+    <dimen name="text_xhdpi_27">27dp</dimen>
+    <dimen name="text_xhdpi_30">30dp</dimen>
+    <dimen name="text_xhdpi_32">32dp</dimen>
+    <dimen name="text_xhdpi_34">34dp</dimen>
+
+    <!-- margins -->
+    <dimen name="margin_xhdpi_5">5dp</dimen>
+    <dimen name="margin_xhdpi_7">7dp</dimen>
+    <dimen name="margin_xhdpi_9">9dp</dimen>
+    <dimen name="margin_xhdpi_12">12dp</dimen>
+    <dimen name="margin_xhdpi_14">14dp</dimen>
+    <dimen name="margin_xhdpi_16">16dp</dimen>
+    <dimen name="margin_xhdpi_18">18dp</dimen>
+    <dimen name="margin_xhdpi_20">20dp</dimen>
+    <dimen name="margin_xhdpi_22">22dp</dimen>
+    <dimen name="margin_xhdpi_25">25dp</dimen>
+    <dimen name="margin_xhdpi_27">27dp</dimen>
+    <dimen name="margin_xhdpi_30">30dp</dimen>
+    <dimen name="margin_xhdpi_32">32dp</dimen>
+    <dimen name="margin_xhdpi_34">34dp</dimen>
+
+    <!-- screen padding -->
+    <dimen name="padding_xhdpi_5">5dp</dimen>
+    <dimen name="padding_xhdpi_7">7dp</dimen>
+    <dimen name="padding_xhdpi_9">9dp</dimen>
+    <dimen name="padding_xhdpi_12">12dp</dimen>
+    <dimen name="padding_xhdpi_14">14dp</dimen>
+    <dimen name="padding_xhdpi_16">16dp</dimen>
+    <dimen name="padding_xhdpi_18">18dp</dimen>
+    <dimen name="padding_xhdpi_20">20dp</dimen>
+    <dimen name="padding_xhdpi_22">22dp</dimen>
+    <dimen name="padding_xhdpi_25">25dp</dimen>
+    <dimen name="padding_xhdpi_27">27dp</dimen>
+    <dimen name="padding_xhdpi_30">30dp</dimen>
+    <dimen name="padding_xhdpi_32">32dp</dimen>
+    <dimen name="padding_xhdpi_34">34dp</dimen>
+    <dimen name="padding_xhdpi_100">100dp</dimen>
+    <dimen name="share_image_height">200dp</dimen>
+    <dimen name="photo_btn_margine_top">-20dp</dimen>
+    <dimen name="photo_btn_margine_left">135dp</dimen>
+    <dimen name="share_image_widght">250dp</dimen>
+
+</resources>

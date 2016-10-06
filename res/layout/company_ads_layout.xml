@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" 
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar"
+        >
+        
+         <TextView
+            android:id="@+id/company_ads_back_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_10"
+            android:src="@drawable/event_btn" 
+            android:text="@string/company_ad"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/back_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin_5"
+            android:textSize="@dimen/text_xhdpi_18"
+            />
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none" 
+        android:layout_marginBottom="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/company_ads_editText_name"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:singleLine="true" 
+                android:background="@drawable/login_input"
+                android:paddingLeft="@dimen/padding_xhdpi_5"/>
+
+            <EditText
+                android:id="@+id/company_ads_editText_details"
+                style="@style/company_add_text_value"
+                android:layout_height="90dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="top|left"
+                android:hint="@string/details"
+                android:imeOptions="actionNext"
+                android:paddingTop="@dimen/margin_10"
+                android:singleLine="false" 
+                android:background="@drawable/login_input"
+                android:paddingLeft="@dimen/padding_xhdpi_5"/>
+
+            <EditText
+                android:id="@+id/company_ads_where_edittext"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/map_icon"
+                android:background="@drawable/login_input"
+                android:hint="@string/where"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_xhdpi_5"/>
+            <LinearLayout
+	            android:id="@+id/company_ads_dropdown_container_layout"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:visibility="gone" >
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/company_ads_srtdt_textview"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/calender_icon"
+                android:hint="@string/strt_dt"
+                android:background="@drawable/login_input"
+                android:paddingLeft="@dimen/padding_xhdpi_5"
+                android:gravity="center_vertical"/>
+            
+            
+            
+             <TextView
+                android:id="@+id/company_ads_enddt__textview"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@drawable/calender_icon"
+                android:hint="@string/end_dt"
+                android:background="@drawable/login_input"
+                android:paddingLeft="@dimen/padding_xhdpi_5"
+                android:gravity="center_vertical"/>
+            
+            
+
+            <TextView
+                android:id="@+id/company_ads_textview_startTime"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/start_time"
+                android:singleLine="true" 
+                android:background="@drawable/login_input"
+                android:paddingLeft="@dimen/padding_xhdpi_5"
+                android:gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/company_ads_textview_end_time"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/end_time"
+                android:singleLine="true"
+                android:background="@drawable/login_input" 
+                android:paddingLeft="@dimen/padding_xhdpi_5"
+                android:gravity="center_vertical"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                
+                android:weightSum="3" 
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/company_ads_image_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.98"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/photo_icon" 
+                    android:padding="@dimen/margin_5"/>
+
+                <ImageView
+                    android:id="@+id/company_ads_video_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/video_icon"
+                    android:padding="@dimen/margin_5"/>
+
+                <ImageView
+                    android:id="@+id/company_ads_doc_imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/note_icon"
+                    android:paddingBottom="@dimen/margin_5"
+                    />
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/company_ads_textview_value"
+                style="@style/company_add_text_value"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/ad_amt"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_656565"/>
+            
+            <TextView
+                android:id="@+id/company_ads_textview_pay"
+                style="@style/company_add_text_value"
+                android:layout_margin="@dimen/margin_10"
+                android:text="@string/pay_for_ad"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </LinearLayout>
+    </ScrollView>
+    
+    
+ </LinearLayout>

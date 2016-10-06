@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/signup_ui_new_user_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_14"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/signup_ui_new_user_heading_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/signup_ui_new_user_backBtn"
+            android:paddingLeft="@dimen/text_xhdpi_14"
+            android:singleLine="true"
+            android:text="Driver Sign up"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xhdpi_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_xhdpi_18" >
+
+                    <ImageView
+                        android:id="@+id/signup_ui_new_user_profileImageView"
+                        android:layout_width="@dimen/padding_xhdpi_100"
+                        android:layout_height="@dimen/padding_xhdpi_100"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/signup_placeholder" />
+
+                    <ImageView
+                        android:layout_width="@dimen/padding_xhdpi_100"
+                        android:layout_height="@dimen/padding_xhdpi_100"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/proflie_placeholder" />
+
+                    <ImageView
+                        android:id="@+id/signup_ui_new_user_uploadImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/signup_ui_new_user_profileImageView"
+                        android:layout_alignRight="@+id/signup_ui_new_user_profileImageView"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/upload_icon" />
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/signup_professional_driver_check_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_btn_selector"
+                    android:checked="false"
+                    android:paddingStart="@dimen/margin_xhdpi_5"
+                    android:text="@string/proffessional_driver"
+                    android:textColor="@color/color_3f3f3f" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xhdpi_14"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/name_edit_text_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_input"
+                    android:gravity="center|left"
+                    android:hint="@string/ed_name_SignupScreen"
+                    android:inputType="textPersonName|textCapWords|"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/email_edittext_SignupScreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:hint="@string/ed_email_SignupScreen"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/password_edittext_SignupScreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:hint="@string/ed_password_SignupScreen"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/confirmPassword_edittext_SignupScreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:hint="@string/ed_confirmPassword_SignupScreen"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/birthday_edittext_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:gravity="center|left"
+                    android:hint="@string/birthday"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/company_name_edittext_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:gravity="center|left"
+                    android:hint="@string/company_name"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/signup_prf_lnrlyt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <EditText
+                        android:id="@+id/height_edittext_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_9"
+                        android:background="@drawable/login_input"
+                        android:hint="@string/height"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/padding_xhdpi_9"
+                        android:singleLine="true"
+                        android:textColor="@color/color_3f3f3f"
+                        android:textSize="@dimen/text_xhdpi_14" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/width_edittext_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_9"
+                        android:background="@drawable/login_input"
+                        android:hint="@string/width"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/padding_xhdpi_9"
+                        android:singleLine="true"
+                        android:textColor="@color/color_3f3f3f"
+                        android:textSize="@dimen/text_xhdpi_14" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/length_edittext_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_xhdpi_9"
+                        android:background="@drawable/login_input"
+                        android:hint="@string/length"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="@dimen/padding_xhdpi_9"
+                        android:singleLine="true"
+                        android:textColor="@color/color_3f3f3f"
+                        android:textSize="@dimen/text_xhdpi_14" >
+                    </EditText>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/address_edittext_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_input"
+                    android:hint="@string/ed_truckwidth_SignupScreen"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/padding_xhdpi_9"
+                    android:singleLine="true"
+                    android:textColor="@color/color_3f3f3f"
+                    android:textSize="@dimen/text_xhdpi_14" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_Signup_SignUpScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_xhdpi_30"
+                    android:background="@drawable/login_btn"
+                    android:gravity="center"
+                    android:text="@string/btn_Signup_SignUpScreen"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

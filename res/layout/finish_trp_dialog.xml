@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/finished_trip_pop"
+    android:layout_marginLeft="@dimen/margin_20"
+    android:layout_marginRight="@dimen/margin_xhdpi_7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/finish_trip_done_textview_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/cross_icon"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/finishTripdialog_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xhdpi_30" >
+
+            <TextView
+                android:id="@+id/finish_trip_done_textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:paddingBottom="@dimen/margin_15"
+                android:text="@string/route_ok_for_truck"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/line_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/finish_trip_done_textview_title"
+                android:layout_marginRight="@dimen/margin_13"
+                android:background="@drawable/line"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yes_check_box_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_15"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <RadioButton
+                android:id="@+id/finish_trip_done_checkbox_yes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_13"
+                android:button="@drawable/check_radio_btn"
+                android:checked="true"
+                android:paddingBottom="@dimen/margin_15"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingTop="@dimen/margin_15"
+                android:text="Yes"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/secnd_line_image"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line"
+                android:contentDescription="@string/app_name" />
+
+            <RadioButton
+                android:id="@+id/finish_trip_done_checkbox_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_13"
+                android:button="@drawable/check_radio_btn"
+                android:checked="false"
+                android:paddingBottom="@dimen/margin_15"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingTop="@dimen/margin_15"
+                android:text="No"
+                android:textColor="@android:color/black" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/finish_trip_done_textview_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_13"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Done"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

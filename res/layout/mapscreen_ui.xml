@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar" >
+
+            <ImageView
+                android:id="@+id/mapscreen_ui_backImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_xhdpi_14"
+                android:background="@drawable/back_icon"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/mapscreen_ui_refreshImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_xhdpi_12"
+                android:background="@drawable/refresh_icon"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/mapscreen_ui_closeImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_xhdpi_5"
+                android:layout_toLeftOf="@+id/mapscreen_ui_refreshImgview"
+                android:background="@drawable/close_icon"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/mapscreen_ui_shareImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mapscreen_ui_closeImgview"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/mapscreen_ui_closeImgview"
+                android:background="@drawable/share_icon"
+                android:contentDescription="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/mapscreen_ui_editImgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mapscreen_ui_shareImgview"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/text_xhdpi_5"
+                android:layout_toLeftOf="@+id/mapscreen_ui_shareImgview"
+                android:background="@drawable/edit_icon"
+                android:contentDescription="@string/app_name" />
+
+          <!--   <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mapscreen_ui_editImgview"
+                android:layout_marginRight="11dp"
+                android:layout_toLeftOf="@+id/mapscreen_ui_editImgview"
+                android:background="@drawable/cancel_btnn"
+                android:contentDescription="@string/app_name" /> -->
+                
+                       <ImageView
+                           android:id="@+id/mapscreen_ui_cancelImgview"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_centerVertical="true"
+                           android:layout_marginRight="@dimen/text_xhdpi_5"
+                           android:layout_toLeftOf="@+id/mapscreen_ui_editImgview"
+                           android:background="@drawable/cancel_btnn"
+                           android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <fragment
+                android:id="@+id/map_relative_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_add_mobs" />
+
+</LinearLayout>

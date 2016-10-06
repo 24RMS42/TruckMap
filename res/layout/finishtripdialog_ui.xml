@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/finished_trip_pop"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/finishTrip_relative_ImageViewCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cross_icon" />
+
+        <RelativeLayout
+            android:id="@+id/finishTripdialog_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xhdpi_30" >
+
+            <TextView
+                android:id="@+id/finishTripdialog_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_xhdpi_12"
+                android:text="@string/finishtripdialog_ui_tvLine1"
+                android:textColor="@color/color_3f3f3f"
+                android:textSize="@dimen/text_xhdpi_18" />
+
+            <TextView
+                android:id="@+id/finishTripdialog_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/finishTripdialog_tv1"
+                android:layout_centerHorizontal="true"
+                android:text="@string/finishtripdialog_ui_tvLine2"
+                android:textColor="@color/color_3f3f3f"
+                android:textSize="@dimen/text_xhdpi_18" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <EditText
+        android:id="@+id/finishTripdialog_comment"
+        android:layout_width="239dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_xhdpi_5"
+        android:background="@drawable/comment_box"
+        android:gravity="left"
+        android:hint="@string/finishtripdialog_edittext_comment"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="40"
+        android:padding="@dimen/text_xhdpi_9"
+        android:textColor="@color/color_3f3f3f"
+        android:textSize="@dimen/text_xhdpi_16" /> -->
+
+    <Button
+        android:id="@+id/finishTripDialogYesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_xhdpi_9"
+        android:layout_marginTop="@dimen/margin_xhdpi_12"
+        android:background="@drawable/pop_btn"
+        android:gravity="center"
+        android:text="@string/finishtripdialog_ui_YesBtn"
+        android:textColor="@color/color_3f3f3f"
+        android:textSize="@dimen/margin_xhdpi_16" />
+
+</LinearLayout>

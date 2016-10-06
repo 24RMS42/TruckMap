@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_top_bg" >
+
+            <TextView
+                android:id="@+id/important_info_textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:background="#F0F0F0"
+                android:padding="@dimen/margin_5"
+                android:text="@string/important_info"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/line_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/important_info_textview_title"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="#808080"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/important_info_textview_title"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/important_info_listview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:divider="@null"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/important_info_textview_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@string/comment"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/margin_20" />
+
+                    <EditText
+                        android:id="@+id/important_info_edittext_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:hint="You may list other helpful safe manouvers/points here"
+                        android:textSize="16sp"
+                        android:background="@drawable/comment_box"
+                        android:gravity="left|top"
+                        android:singleLine="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/important_info_textView_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cross_icon_gray"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/important_info_textview_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

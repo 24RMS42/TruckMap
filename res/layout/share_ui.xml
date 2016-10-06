@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/share_ui_backImgview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_14"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/share_ui_tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/share_heading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xhdpi_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <!--
+                         <com.ta.truckmap.util.CustomImageView
+                        android:id="@+id/share_ui_shareImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="center"
+                        android:src="@drawable/share_image_default" />
+                -->
+
+                <ImageView
+                    android:id="@+id/imgcheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/share_image_default" />
+
+                <ImageView
+                    android:id="@+id/share_ui_shareImageView"
+                    android:layout_width="@dimen/share_image_widght"
+                    android:layout_height="@dimen/share_image_height"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/share_ui_uploadImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/share_ui_shareImageView"
+                    android:layout_marginLeft="@dimen/photo_btn_margine_left"
+                    android:layout_marginTop="@dimen/photo_btn_margine_top"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/camera_upload_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/share_ui_comment_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/share_ui_tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_xhdpi_14"
+                    android:text="@string/share_ui_tv_comment"
+                    android:textColor="@color/color_656565" />
+
+                <EditText
+                    android:id="@+id/share_ui_ed_comment"
+                    android:layout_width="323dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/text_xhdpi_5"
+                    android:background="@drawable/comment_box"
+                    android:gravity="top|left"
+                    android:hint="@string/share_ui_ed_comment"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="4"
+                    android:maxLength="160"
+                    android:textSize="@dimen/text_xhdpi_14" />
+
+                <Button
+                    android:id="@+id/share_ui_submitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_xhdpi_9"
+                    android:layout_marginTop="@dimen/margin_xhdpi_9"
+                    android:background="@drawable/login_btn"
+                    android:padding="@dimen/padding_xhdpi_5"
+                    android:text="@string/btn_SubmitScreen"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/row_add_mobs" />
+
+</LinearLayout>

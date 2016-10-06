@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/notificationsDetail_profile_placeholder"
+        android:layout_width="fill_parent"
+        android:layout_height="232dp"
+        android:layout_margin="@dimen/text_xhdpi_9"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/signup_placeholder" />
+
+    <TextView
+        android:id="@+id/notificationsDetail_LocationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_xhdpi_9"
+        android:text="@string/notificationsDetail_LocationName"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xhdpi_18" />
+
+    <TextView
+        android:id="@+id/notificationsDetail_LocationNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_xhdpi_9"
+        android:textColor="@color/color_3f3f3f" />
+
+    <TextView
+        android:id="@+id/notificationsDetail_Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_xhdpi_9"
+        android:text="@string/notificationsDetail_Comment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_xhdpi_18" />
+
+    <TextView
+        android:id="@+id/notificationsDetail_aboutTripTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_xhdpi_9"
+        android:textColor="@color/color_3f3f3f" />
+
+</LinearLayout>

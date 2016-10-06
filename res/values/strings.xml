@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MO-BIA</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Login Screens -->
+    <string name="welcome_tv_Logo">MO-BIA</string>
+    <string name="ed_email">Email</string>
+    <string name="ed_password">Password</string>
+    <string name="btn_Login">Login</string>
+    <string name="tv_forgetPassword">Forgot Password?</string>
+    <string name="btn_SignUp">Sign up as a New User</string>
+    <string name="signup_as_company">Sign up as a Company/Business</string>
+    <string name="label_message">Truck Map App</string>
+    <string name="login_heading">Sign In</string>
+    <string name="msg_sd_card_nt_avail">SD card not available</string>
+    <string name="ok">Ok</string>
+    <!-- Signup Screen -->
+    <string name="signup_heading">User Registration</string>
+    <string name="ed_name_SignupScreen">Name</string>
+    <string name="proffessional_driver">I am a Professional driver</string>
+    <string name="ed_email_SignupScreen">Email</string>
+    <string name="ed_dob_SignupScreen">Date Of Birth [mm-dd-yyyy] </string>
+    <string name="ed_password_SignupScreen">Password</string>
+    <string name="ed_confirmPassword_SignupScreen">Re-enter Password</string>
+    <string name="company_name">Company/Bussiness Name</string>
+    <string name="ed_truckwidth_SignupScreen">Address</string>
+    <string name="ed_trucklenght_SignupScreen">Enter Truck Length</string>
+    <string name="btn_Signup_SignUpScreen">Sign up</string>
+    <string name="tv_topbar_welcomeUiScreen">Login</string>
+    <string name="msg_netork_error">Network not available.</string>
+    <string name="birthday">Birthday</string>
+    <string name="msg_select_video">Select video from camera or gallery</string>
+
+    <!-- Home Screen -->
+    <string name="home_heading">Home</string>
+    <string name="home_addnewtrip">ADD NEW TRIP</string>
+    <string name="home_notification">NOTIFICATIONS</string>
+    <string name="home_currentTrips">CURRENT TRIPS</string>
+    <string name="home_finishedTrips">FINISHED TRIPS</string>
+
+    <!-- Share Screen -->
+    <string name="share_heading">Share</string>
+    <string name="share_ui_tv_comment">Comment</string>
+    <string name="btn_SubmitScreen">Submit</string>
+    <string name="share_ui_ed_comment">Write your message here ...</string>
+    <string name="share_ui_ed_alert_success">Line is drawn  successfully.</string>
+    <string name="share_ui_ed_alert_notsuccess">Error! Line is not drawn.</string>
+
+    <!-- Forget Password Screen -->
+    <string name="forgetpassword_ui_tvLine1">Forgot Password</string>
+    <string name="forgetpassword_ui_tvLine2">*Your password will send on your</string>
+    <string name="forgetpassword_ui_tvLine3">email id register with us</string>
+    <string name="forgetpassword_ui_btnSend">Send</string>
+
+    <!-- Finish Trip Dialog Screen -->
+    <string name="finishtripdialog_ui_tvLine1">Are you sure! You want to</string>
+    <string name="finishtripdialog_ui_tvLine2">finish this trip?</string>
+    <string name="finishtripdialog_ui_YesBtn">Yes</string>
+    <string name="finishtripdialog_edittext_comment">Comment (Optional)</string>
+    <string name="color_dialog_edittext">Please enter Some comments</string>
+
+    <!-- Add new trip Screen -->
+    <string name="addnewtrip_ui_tvLine1">Add New Trip</string>
+    <string name="addnewtrip_ui_btnEnter">Enter</string>
+    <string name="addnewtrip_ui_ed_TripName">Trip Name</string>
+    <string name="addnewtrip_ui_ed_DesName">Destination/End Point of Trip</string>
+    <string name="title_activity_sign_up_screen">SignUpScreen</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_share_screen">ShareScreen</string>
+    <string name="title_activity_finish_trip">FinishTripActivity</string>
+    <string name="title_activity_map_screen">MapScreenActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="lbl_gallery">Gallery</string>
+    <string name="msg_select_image">Select image from camera or gallery</string>
+    <string name="lbl_camera">Camera</string>
+
+    <!-- Finished trip Screen -->
+    <string name="finishtrip_ui_tv_notif">Finished Trips</string>
+
+    <!-- Notification Screen -->
+    <string name="notification_ui_tv_notif">Notifications</string>
+    <string name="notification_ui_tv_UserName">UserName</string>
+    <string name="notification_ui_tv_aboutTrip">AboutTrip</string>
+    <string name="notification_ui_tv_Name">Name : </string>
+    <string name="notification_ui_tv_TripId">Trip Id</string>
+    <string name="notification_ui_tv_catloc">Category Location</string>
+    <string name="notification_ui_tv_TripType">Screen :</string>
+    <string name="notification_ui_tv_CatLoc">Category :</string>
+    <string name="notification_ui_tv_comment">Comment :</string>
+    <string name="sd_card_not_available">SD-Card not available</string>
+    <!-- Notifications Detail Screen -->
+    <string name="notificationsDetails_ui_Logo_tv">Notifications Detail</string>
+    <string name="finishTrip_ui_TripName">Name of the trip</string>
+    <string name="finishTrip_ui_Trip">Trip Name:</string>
+    <string name="finishTrip_ui_Source">Start Point/Warehouse/Store:</string>
+    <string name="finishTrip_ui_Comment">Comment:</string>
+    <string name="finishTrip_ui_Sourcename">Name of the source</string>
+    <string name="finishTrip_ui_commentdisplay">Comment Display</string>
+    <string name="finishTrip_ui_Destination">Destination Address:</string>
+    <string name="finishTrip_ui_Destinationname">Name of the Destination</string>
+    <string name="notificationsDetail_LocationName">Location Name: </string>
+    <string name="notificationsDetail_Comment">Comment: </string>
+    <string name="MapScreenAlert">Are you sure! You want to cancel this trip?</string>
+
+    <!-- sign up screen alerts -->
+    <string name="alt_name">Please enter your name</string>
+    <string name="alt_email">Please enter your email</string>
+    <string name="mobile">Mobile</string>
+    <string name="alt_password">Please enter your password</string>
+    <string name="alt_retype">Please Re-enter your password</string>
+    <string name="alt_company_name">Please enter Company/Bussiness Name</string>
+    <string name="alt_type">Please enter Mobile Number</string>
+    <string name="birthday_type">Please enter Birthday Date</string>
+    <string name="alt_dob">Please enter Date of Birth</string>
+    <string name="alt_company">Please enter Address of Company</string>
+    <string name="alt_lenght">Please enter Truck Lenght</string>
+    <string name="alt_pwdmatch">Re-enter password not matched</string>
+    <string name="alt_invalidemail">Invalid Email</string>
+    <string name="lbl_comment">Comment</string>
+    <string name="lbl_categories">Categories</string>
+    <string name="alt_heigth">Please enter Truck Heigth</string>
+    <string name="alt_wigth">Please enter Truck Width</string>
+
+    <!-- share screen alerts -->
+    <string name="alt_comment">Please enter comment</string>
+    <string name="title_activity_notifications_detail">NotificationsDetail</string>
+    <string name="title_activity_map_screen_finish">MapScreenFinish</string>
+    <string name="drawlinesuccess">Data is shared successfully.</string>
+
+    <!-- string for screen 7 -->
+    <string name="event_name">EVENT</string>
+    <string name="dummy_event_text">Dummy Event Name</string>
+    <string name="california">california, USA</string>
+    <string name="setting">Settings</string>
+    <string name="company_ad">Company/Business Ad</string>
+
+    <!-- string for Company ad screen -->
+    <string name="name">Name</string>
+    <string name="details">Details</string>
+    <string name="where">Where</string>
+    <string name="strt_dt">Start Date</string>
+    <string name="end_dt">End Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="upload">Upload</string>
+    <string name="alt_event_name">Please enter event name</string>
+    <string name="alt_details">Please enter details</string>
+    <string name="alt_where">Please enter where</string>
+    <string name="alt_when">Please enter when</string>
+    <string name="alt_start_time">Please enter start time</string>
+    <string name="alt_end_time">Please enter end time</string>
+    <string name="alt_upload">Please choose an image</string>
+
+    <!-- string for home screen -->
+    <string name="notifications">Notifications</string>
+    <string name="current_trips">Current Trips</string>
+    <string name="finished_trips">Finished Trips</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re-enter Password</string>
+    <string name="phone_mobile">Phone/Mobile</string>
+    <string name="address">Address</string>
+    <string name="Forget_Password">Forget Password ?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="signup_as_new_user">Sign up as a New User</string>
+
+    <!-- string for dialog -->
+    <string name="add_new_trip">Add new trip</string>
+    <string name="driver_registration">Driver Registration</string>
+    <string name="company_registration_header">Company/Business Registration</string>
+    <string name="email">Email</string>
+    <string name="trip_name">Trip #/Name</string>
+    <string name="add_more_destination">Add more destination</string>
+    <string name="enter_detail_about_truck">Enter detail about your Trailer</string>
+    <string name="destination_end_point">Destination address</string>
+    <string name="destination_contact_detail">Destination phone#</string>
+    <string name="important_info">Important safety info at destination:</string>
+    <string name="call_before_room_poarking">Call before arrival for store to make room parking</string>
+    <string name="no_truck_allowed">No truck alloweds but ok</string>
+    <string name="use_first_entrance">Use 1st Entrance</string>
+    <string name="use_second_entrance">Use 2nd Entrance</string>
+    <string name="front_building">Front of building/store</string>
+    <string name="comment">Comment</string>
+    <string name="upload_video">Upload Audio/ \nVideo</string>
+    <string name="title">Title</string>
+    <string name="delete_trip_msg">Are you sure you want \nto finish this trip using current location as your unloading address?</string>
+    <string name="current_unloading_point">"current unloading point"</string>
+    <string name="route_ok_for_truck">Is this route safe for Truck/Trailer?</string>
+    <string name="route">Route</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="dimenston_of_truck">Dimension of Truck</string>
+    <string name="height">Height:</string>
+    <string name="width">Width:</string>
+    <string name="length">Length:</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="lbl_chng_rds">Change radius manually</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="ad_amt">Pay $1.99 per Ad</string>
+    <string name="pay_for_ad">Pay for Ads</string>
+    <string name="video_size_limit_exceed">Video Size limit exceed!!!!</string>
+    <string name="video_duration_limit_exceed">Video duration limit exceed!!!!</string>
+    <string name="alt_no_rcd">No Records Found</string>
+    <string name="upload_photo">Upload Image</string>
+    <string name="route_ok">Is Route safe for Truck/Trailer:</string>
+     <string name="imp_info">Important info list:</string>
+
+</resources>

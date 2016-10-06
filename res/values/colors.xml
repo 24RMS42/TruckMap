@@ -1,0 +1,20 @@
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1589FF</color>
+    <color name="color_3f3f3f">#3f3f3f</color>
+    <color name="color_4481d2">#4481d2</color>
+    <color name="color_656565">#656565</color>
+    
+    <!-- Color for draw line screen -->
+    <color name="color_One">#1aabda</color>
+    <color name="color_Two">#23b48d</color>
+    <color name="color_Three">#f09633</color>
+    <color name="color_Four">#d9443e</color>
+    <color name="color_Five">#4f3ef9</color>
+    <color name="color_Six">#626262</color>
+    <color name="color_Seven">#fd64cc</color>
+    <color name="color_Eight">#593938</color>
+
+</resources>

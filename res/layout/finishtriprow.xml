@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/notification_row1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/finishTrip_ui_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_xhdpi_5" >
+
+        <TextView
+            android:id="@+id/finishTrip_ui_TripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:layout_toRightOf="@+id/TripName"
+            android:text="@string/finishTrip_ui_TripName"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_18" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/finished_trip_arrow" />
+
+        <TextView
+            android:id="@+id/finishTrip_ui_tv_destinationname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:layout_marginRight="@dimen/margin_xhdpi_30"
+            android:layout_marginTop="@dimen/margin_xhdpi_9"
+            android:layout_toRightOf="@+id/destination"
+            android:singleLine="true"
+            android:text="@string/finishTrip_ui_Destinationname"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/destination"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:text="@string/finishTrip_ui_Source"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finishTrip_ui_tv_sourcename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/destination"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:layout_marginRight="@dimen/margin_xhdpi_30"
+            android:layout_toRightOf="@+id/source"
+            android:singleLine="true"
+            android:text="@string/finishTrip_ui_Sourcename"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/TripName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/finishTrip_ui_TripName"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:text="@string/finishTrip_ui_Trip"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_18" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/finishTrip_ui_tv_destinationname"
+            android:layout_alignBottom="@+id/finishTrip_ui_tv_destinationname"
+            android:layout_alignLeft="@+id/source"
+            android:text="@string/finishTrip_ui_Destination"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/destination"
+            android:layout_below="@+id/destination"
+            android:text="@string/route_ok"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finishTrip_ui_tv_isrout_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_toRightOf="@+id/TextView05"
+            android:singleLine="true"
+            android:text="@string/finishTrip_ui_Destinationname"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView05"
+            android:layout_below="@+id/TextView05"
+            android:text="@string/imp_info"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finishTrip_ui_tv_importentinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_below="@+id/finishTrip_ui_tv_isrout_ok"
+            android:layout_toRightOf="@+id/TextView07"
+            android:singleLine="true"   
+            android:text="sadfasfdasfdasf sdfadfasdfd asfdasfds asfdasfsa asfasfda asfasfd asf asdfa dsadfasf "
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <LinearLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_below="@+id/finishTrip_ui_tv_importentinfo"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/margin_xhdpi_5"
+                android:text="@string/finishTrip_ui_Comment"
+                android:textColor="@color/color_656565"
+                android:textSize="@dimen/text_xhdpi_12"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xhdpi_5"
+                android:singleLine="true"
+                android:text="@string/finishTrip_ui_commentdisplay"
+                android:textColor="@color/color_656565"
+                android:textSize="@dimen/text_xhdpi_12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

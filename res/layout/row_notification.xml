@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/notification_ui_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_xhdpi_5"
+        android:background="@drawable/notification_row"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/notification_ui_profile_placeholder"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/text_xhdpi_9"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_placeholder" />
+
+        <TextView
+            android:id="@+id/notification_ui_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_xhdpi_5"
+            android:layout_marginTop="@dimen/margin_xhdpi_9"
+            android:layout_toRightOf="@id/notification_ui_profile_placeholder"
+            android:text="@string/notification_ui_tv_Name"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_14" />
+
+        <TextView
+            android:id="@+id/notification_ui_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/notification_ui_Name"
+            android:layout_alignBottom="@id/notification_ui_Name"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:layout_toRightOf="@id/notification_ui_Name"
+            android:text="@string/notification_ui_tv_UserName"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_typename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/notification_ui_Name"
+            android:layout_below="@id/notification_ui_Name"
+            android:text="@string/notification_ui_tv_TripType"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_14" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/finished_trip_arrow" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/notification_ui_tv_typename"
+            android:layout_alignBottom="@id/notification_ui_tv_typename"
+            android:layout_marginLeft="@dimen/margin_xhdpi_5"
+            android:layout_toRightOf="@id/notification_ui_tv_typename"
+            android:text="@string/notification_ui_tv_TripId"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/notification_ui_tv_catloc"
+            android:layout_alignBottom="@+id/notification_ui_tv_catloc"
+            android:layout_alignLeft="@+id/notification_ui_tv_typename"
+            android:text="@string/notification_ui_tv_CatLoc"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_14" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/notification_ui_tv_category"
+            android:layout_below="@+id/notification_ui_tv_category"
+            android:text="@string/notification_ui_tv_comment"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_14" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_catloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_ui_tv_type"
+            android:layout_marginRight="22dp"
+            android:layout_toRightOf="@+id/notification_ui_tv_comment"
+            android:singleLine="true"
+            android:text="kdjgsdfjgjksfdjgjkjjdsg"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+
+        <TextView
+            android:id="@+id/notification_ui_tv_aboutTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/notification_ui_tv_comment"
+            android:layout_alignBottom="@+id/notification_ui_tv_comment"
+            android:layout_alignLeft="@+id/notification_ui_tv_catloc"
+            android:layout_marginLeft="@dimen/text_xhdpi_5"
+            android:layout_marginRight="22dp"
+            android:singleLine="true"
+            android:text="@string/notification_ui_tv_aboutTrip"
+            android:textColor="@color/color_656565"
+            android:textSize="@dimen/text_xhdpi_12" />
+    </RelativeLayout>
+
+</LinearLayout>

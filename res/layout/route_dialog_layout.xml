@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_popup" >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_13"
+            android:layout_marginTop="@dimen/margin_13"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/route_ui_tvLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_xhdpi_9"
+                android:layout_marginTop="@dimen/text_xhdpi_20"
+                android:text="Enter Radius in Miles"
+                android:textColor="@color/color_3f3f3f"
+                android:textSize="@dimen/margin_xhdpi_22" />
+
+            <EditText
+                android:id="@+id/input_radius_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_xhdpi_9"
+                android:background="@drawable/forgot_input"
+                android:contentDescription="@string/app_name"
+                android:inputType="numberDecimal"
+                
+                android:paddingLeft="@dimen/padding_xhdpi_9"
+                android:singleLine="true" 
+                android:maxLength="5">
+				
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/route_cancel_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="-3dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/cross_icon" />
+
+        <Button
+            android:id="@+id/route_btnSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+            android:layout_marginRight="@dimen/margin_13"
+            android:layout_marginTop="@dimen/text_xhdpi_12"
+            android:background="@drawable/btn"
+            android:text="Send"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_xhdpi_18" />
+    </RelativeLayout>
+
+</LinearLayout>

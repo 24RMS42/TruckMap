@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_popup"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_13"
+                android:layout_marginTop="@dimen/margin_13"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_10"
+                    android:orientation="horizontal"
+                    android:weightSum="2" >
+
+                    <RelativeLayout
+                        android:id="@+id/upload_video_linear_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/post_audio_video_dialog_textview_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:drawableBottom="@drawable/photo_icon"
+                            android:gravity="center"
+                            android:text="@string/upload_photo"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/post_audio_video_dialog_rel_layout_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/post_audio_video_dialog_imageview_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_alignParentRight="true"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/post_audio_video_dialog_imageview_photo_cross"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/popup_close_icon"
+                                android:layout_marginRight="@dimen/margin_5" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/post_audio_video_dialog_textview_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:drawableBottom="@drawable/video_icon"
+                            android:gravity="center"
+                            android:text="@string/upload_video"
+                            android:textColor="@android:color/black"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/post_audio_video_dialog_rel_layout_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:id="@+id/post_audio_video_dialog_imageview_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY" />
+
+                            <ImageView
+                                android:id="@+id/post_audio_video_dialog_imageview_video_cross"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/popup_close_icon" 
+                                android:layout_marginRight="@dimen/margin_5"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/post_audio_video_dialog_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_10"
+                        android:text="@string/title"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/post_audio_video_dialog_edittext_title"
+                        style="@style/company_add_text_value"
+                        android:background="@drawable/login_input"
+                        android:imeOptions="actionNext"
+                        android:hint="Enter the title/subject"
+                        android:textSize="16sp"
+                        android:singleLine="true" 
+                        android:maxLength="50"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/post_audio_video_dialog_textview_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_10"
+                        android:text="@string/comment"
+                        android:textColor="@android:color/black" />
+
+                    <EditText
+                        android:id="@+id/post_audio_video_dialog_edittext_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_input"
+                        android:singleLine="false"
+                        android:maxLength="300"
+                        android:hint="Enter comments here"
+                        android:textSize="16sp"
+                        android:inputType="textShortMessage"
+                        android:maxLines="4"
+                        android:gravity="top|left"
+                        android:padding="@dimen/padding_xhdpi_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/post_audio_video_dialog_textview_close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="-3dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/cross_icon"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/post_audio_video_dialog_textview_enterpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_13"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/btn"
+            android:gravity="center"
+            android:text="Post"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

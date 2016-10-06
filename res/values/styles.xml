@@ -1,0 +1,82 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        
+        
+    </style>
+      <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+          <item name="android:indeterminateOnly">false</item>
+          <item name="android:minHeight">10dip</item>
+          <item name="android:maxHeight">20dip</item>
+        </style>    
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme" />
+       
+     <style name="Theme.Transparent" parent="android:Theme"></style>
+    
+    <style name="event_text_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize"> 22sp </item>
+        <item name="android:textColor"> @android:color/white</item>
+    </style>
+
+    <style name="impotant_info_text_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize"> 18sp </item>
+        <item name="android:textColor"> @android:color/black</item>
+    </style>
+
+    <style name="home_screen_text_value">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize"> 20sp </item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="company_add_text_value">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize"> 18sp </item>
+        <item name="android:textColor"> @android:color/black</item>
+    </style>
+
+    <style name="add_new_dialog_set_text">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize"> 18sp </item>
+        <item name="android:textColor"> @android:color/black</item>
+    </style>
+
+    <style name="event_text_value2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize"> 16sp </item>
+        <item name="android:textColor"> @android:color/white</item>
+    </style>
+    <!-- style for registration -->
+    <style name="set_edit_text_value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/email_line</item>
+        <item name="android:paddingRight">@dimen/margin_5</item>
+        <item name="android:paddingLeft">@dimen/margin_15</item>
+        <item name="android:textSize"> @dimen/margin_20</item>
+        <item name="android:textColorHint"> @android:color/black</item>
+    </style>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <com.ta.truckmap.util.TouchImageView
+            android:id="@+id/main_imgvw"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" 
+            android:layout_margin="@dimen/margin_5">
+        </com.ta.truckmap.util.TouchImageView>
+
+        <!--
+         <ImageView 
+            android:id="@+id/main_imgvw"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+            android:layout_centerInParent="true"
+        -->
+
+            />
+
+        <ImageView
+            android:id="@+id/cross_imgvw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/close_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

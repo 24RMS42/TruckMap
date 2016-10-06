@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" 
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar"
+        >
+        
+         <TextView
+            android:id="@+id/event_activity_back_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_10"
+            android:src="@drawable/event_btn" 
+            android:text="Events/ Business Ads"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/back_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/margin_5"
+            android:textSize="@dimen/text_xhdpi_18"
+            />
+
+        <ImageView
+            android:id="@+id/event_activity_addnew_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_xhdpi_14"
+            android:background="@drawable/add_icon"
+            android:contentDescription="@string/app_name" />
+        
+    </RelativeLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/event_activity_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none" 
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    
+
+</LinearLayout>
