@@ -2,6 +2,10 @@
 
 MO-BIA Android App
 
+### Language ###
+
+* Java
+
 ### How to setup ###
 
 * Checkout
