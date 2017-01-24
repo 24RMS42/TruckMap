@@ -6,6 +6,14 @@ MO-BIA Android App
 
 * Java
 
+### Technology stack used ###
+
+* Google Map
+* Parcel
+* Base64 encode and decode
+* Google Analytics
+* Crashlytics
+
 ### How to setup ###
 
 * Checkout
